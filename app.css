@@ -1,0 +1,110 @@
+#filter-library {
+  float: right;
+  width: 200px;
+  position: relative;
+  top: 5px;
+}
+
+ul {
+  list-style:none;
+  padding-left: 0;
+  min-height: 150px;
+  border: 2px dashed #282828;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+/*ul li{
+  transition: 0.5s;
+}*/
+
+/*ul li:hover{
+  background-color: #525252;
+}*/
+
+li {
+  border-color: #282828;
+  margin-bottom: 20px;
+  background-color: #222222;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+li .fa-bars {
+  margin-right: 10px;
+  cursor: move;
+}
+
+li .fa-trash { 
+  float: right;
+  cursor: pointer;
+  position: relative;
+  top: 2px;
+  opacity:0.3;
+  transition: 0.5s;
+}
+
+li .fa-trash:hover{
+  opacity:1;
+}
+
+li .notes {
+  margin-left: 22px;
+  margin-top: 10px;
+  display: block;
+  background-color: #444;
+  color: #999;
+  padding: 5 12px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+.alert {
+  margin-top: 20px;
+  display: none;
+  text-align: center;
+}
+
+@keyframes changecolor{
+  0% {
+    background-color: #625E5E
+  }
+  100% {
+    background-color: #2222;
+  }
+}
+
+.animateme
+{
+  animation: changecolor 2s;
+}
+
+
+@keyframes shakeitup{
+  0% {
+    left:20px;
+  }
+  25% {
+    right:20px;
+  }
+  50% {
+    left:20px;
+  }
+  100% {
+    right:20px;
+  }
+}
+
+.animateplaybutton
+{
+  position: relative;
+  /*left:20px;*/
+  /*transition:2s;*/
+  /*background-color: green !important;*/
+ animation: shakeitup 0.1s;
+}
+
+/* Add Your Styles Here */
